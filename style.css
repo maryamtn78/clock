@@ -2,11 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
 }
 body{
     background: url(./1.jpg);
-    height: 100vh;
+    min-height: 100vh;
 }
 .project{
     display: flex;
@@ -14,18 +15,97 @@ body{
     justify-content: space-around;
 }
 .digital {
-    margin-top: 100px;
+    margin-top: 180px;
     height: 30px;
     text-align: center;
-    font-size:35px;
+    font-size:30px;
 }
 
 .round {
     margin-top: 100px;
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border: 3px solid black;
     border-radius: 50%;
     position: relative;
 }
-.numbers
+.round::after{
+    content: "";
+    position: absolute;
+    background-color: black;
+    z-index: 11;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+
+}
+.hand{
+    position: absolute;
+    left:50%;
+    bottom:50%;
+    transform:translateX(-50%);
+    transform-origin: bottom;
+    border-radius: 30px;
+}
+.Shand{
+    width: 2px;
+    height:40%;
+    background: rgb(99, 98, 98);  
+}     
+.Mhand{
+    width: 4px;
+    height:36%;
+    background: black;
+}
+.Hhand{
+    width: 5px;
+    height:30%;
+    background: black;
+}
+
+
+.numbers{
+    --rotatings : 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    font-size: 15px;
+    transform: rotate(var(--rotatings));
+    text-align: center;
+}
+.num1 {
+    --rotatings : 30deg;
+}
+.num2 {
+    --rotatings : 60deg;
+}
+.num3 {
+    --rotatings : 90deg;
+}
+.num4 {
+    --rotatings : 120deg;
+}
+.num5 {
+    --rotatings : 150deg;
+}
+.num6 {
+    --rotatings : 180deg;
+}
+.num7 {
+    --rotatings : 210deg;
+}
+.num8 {
+    --rotatings : 240deg;
+}
+.num9 {
+    --rotatings : 270deg;
+}
+.num10 {
+    --rotatings : 300deg;
+}
+.num11 {
+    --rotatings : 330deg;
+}
